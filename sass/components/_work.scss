@@ -1,0 +1,53 @@
+.work {
+  padding-top: 0;
+  display: none;
+  &__list {
+    display: block;
+  }
+  &__item {
+    position: relative;
+  }
+  &__card {
+    display: block;
+    width: calc(#{$mobile} - 30px);
+    height: auto;
+  }
+  &__action {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-bg);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    &__list {
+      display: flex;
+    }
+    &__item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__card {
+      width: calc((#{$desktop} - (3 * 30px)) / 3);
+    }
+    &__action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

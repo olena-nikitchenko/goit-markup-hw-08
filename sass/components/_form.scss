@@ -1,0 +1,121 @@
+.form {
+  padding: 0;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.01em;
+  &__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  &__list {
+    margin-bottom: 20px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  &__field {
+    min-width: 370px;
+    min-height: 40px;
+    padding: 8px 8px;
+    padding-left: 42px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms var(--timing-function);
+    color: var(--secondary-text-color);
+    @media screen and (min-width: $desktop) {
+      min-width: 448px;
+    }
+    &--textarea {
+      display: block;
+      resize: none;
+    }
+  }
+  &__field:last-child {
+    padding: 16px;
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
+  &__icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+
+    fill: var(--secondary-text-color);
+    transition: fill 250ms var(--timing-function);
+    &--person {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    .form__field:focus + & {
+      fill: var(--accent-color);
+    }
+  }
+}
+.chekbox {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 4px;
+  align-items: center;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+  color: inherit;
+  @media screen and (min-width: $desktop) {
+    gap: 10px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  &__link {
+    text-decoration-line: underline;
+    text-underline-position: under;
+    color: var(--accent-color);
+  }
+  &__field {
+    position: absolute;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    border: 1.5px solid var(--secondary-text-color);
+    border-radius: 4px;
+    .checkbox__field:checked + & {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      background-origin: border-box;
+    }
+  }
+  &__label {
+    display: inline-block;
+    margin-left: 36px;
+  }
+}

@@ -1,0 +1,46 @@
+.client {
+  &__box {
+    width: $mobile;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+    }
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((#{$mobile} - (2 * 30px)) / 2);
+    height: 92px;
+    background-color: transparent;
+    border: 1px solid var(--bg-secondary-network);
+    border-radius: 4px;
+    fill: var(--bg-secondary-network);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
+    @media screen and (min-width: $tablet) {
+      width: calc((#{$tablet} - (3 * 30px)) / 3);
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((#{$desktop} - (6 * 30px)) / 6);
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+  }
+}
