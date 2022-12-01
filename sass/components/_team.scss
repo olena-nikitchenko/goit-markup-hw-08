@@ -1,13 +1,13 @@
 .team {
   background-color: var(--bg-secondary-color);
   &__box {
-    width: $mobile;
+    max-width: 767px;
     text-align: center;
-    @media screen and (min-width: #{$tablet}) {
-      width: $tablet;
+    @media screen and (min-width: 768px) {
+      width: 768px;
     }
-    @media screen and (min-width: #{$desktop}) {
-      width: $desktop;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
     }
   }
   &__list {
@@ -15,36 +15,36 @@
   }
   &__img {
     display: block;
-    width: calc(#{$mobile} - 30px);
+    width: calc(480px - 30px);
   }
-  @media screen and (min-width: #{$tablet}) {
+  @media screen and (min-width: 768px) {
     &__list {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
     }
     &__img {
-      width: calc((#{$tablet} - (2 * 30px)) / 2);
+      width: calc((768px - (2 * 30px)) / 2);
     }
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     &__img {
-      width: calc((#{$desktop} - (4 * 30px)) / 4);
+      width: calc((1200px - (4 * 30px)) / 4);
     }
   }
 }
 .card--team {
-  width: calc(#{$mobile} - 30px);
+  width: calc(480px - 30px);
   padding-top: 30px;
   padding-bottom: 24px;
   background: var(--white-text-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (min-width: #{$tablet}) {
-    width: calc((#{$tablet} - (2 * 30px)) / 2);
-    @media screen and (min-width: #{$desktop}) {
-      width: calc((#{$desktop} - (4 * 30px)) / 4);
+  @media screen and (min-width: 768px) {
+    width: calc((768px - (2 * 30px)) / 2);
+    @media screen and (min-width: 1200px) {
+      width: calc((1200px - (4 * 30px)) / 4);
       padding-top: 30px;
       padding-bottom: 30px;
     }

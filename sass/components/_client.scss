@@ -1,13 +1,13 @@
 .client {
   &__box {
-    width: $mobile;
+    max-width: 767px;
     text-align: center;
 
-    @media screen and (min-width: $tablet) {
-      width: $tablet;
+    @media screen and (min-width: 768px) {
+      width: 768px;
     }
-    @media screen and (min-width: $desktop) {
-      width: $desktop;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
     }
   }
   &__list {
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc((#{$mobile} - (2 * 30px)) / 2);
+    width: calc((480px - (2 * 30px)) / 2);
     height: 92px;
     background-color: transparent;
     border: 1px solid var(--bg-secondary-network);
@@ -30,12 +30,12 @@
       border: 1px solid var(--accent-color);
       fill: var(--accent-color);
     }
-    @media screen and (min-width: $tablet) {
-      width: calc((#{$tablet} - (3 * 30px)) / 3);
+    @media screen and (min-width: 768px) {
+      width: calc((768px - (3 * 30px)) / 3);
     }
 
-    @media screen and (min-width: $desktop) {
-      width: calc((#{$desktop} - (6 * 30px)) / 6);
+    @media screen and (min-width: 1200px) {
+      width: calc((1200px - (6 * 30px)) / 6);
     }
   }
 

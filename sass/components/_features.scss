@@ -1,6 +1,6 @@
 .features {
   &__list {
-    width: 480px;
+    max-width: 767px;
   }
   &__item {
     width: calc(100% - (2 * 15px));

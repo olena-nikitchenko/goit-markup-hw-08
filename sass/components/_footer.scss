@@ -3,18 +3,18 @@
   padding-bottom: 60px;
   background-color: var(--bg-color-hero-footer);
   &__container {
-    width: $mobile;
+    max-width: 767px;
     display: block;
     text-align: center;
-    @media screen and (min-width: $tablet) {
-      width: $tablet;
+    @media screen and (min-width: 768px) {
+      width: 768px;
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
     }
 
-    @media screen and (min-width: $desktop) {
-      width: $desktop;
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
       flex-wrap: nowrap;
     }
   }
@@ -23,11 +23,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       margin-left: 76px;
       margin-right: 0;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
       flex-basis: 231px;
       margin-left: 0;
 
@@ -52,7 +52,7 @@
   &__link {
     transition: color 250ms var(--timing-function);
     line-height: calc(16 / 14);
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
       text-align: start;
     }
     &:hover,
@@ -73,12 +73,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-bottom: 0px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     flex-basis: 206px;
     margin-left: 70px;
     margin-right: 0;
@@ -92,7 +92,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-text-bg);
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
       text-align: start;
     }
   }
@@ -104,11 +104,11 @@
   padding: 0;
   margin: 0;
   margin-left: auto;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     margin-right: auto;
   }
 }
@@ -116,7 +116,7 @@
   &__text--footer {
     margin-bottom: 20px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
       text-align: start;
     }
   }
@@ -134,10 +134,10 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--white-text-bg);
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
       display: block;
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
       width: 358px;
       display: inline-block;
       margin-bottom: 0;
