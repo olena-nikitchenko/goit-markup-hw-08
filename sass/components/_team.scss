@@ -1,8 +1,9 @@
 .team {
   background-color: var(--bg-secondary-color);
   &__box {
-    max-width: 767px;
+    width: 480px;
     text-align: center;
+
     @media screen and (min-width: 768px) {
       width: 768px;
     }
@@ -10,12 +11,16 @@
       width: 1200px;
     }
   }
-  &__list {
-    display: block;
-  }
+  // &__item {
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
   &__img {
-    display: block;
     width: calc(480px - 30px);
+    height: auto;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     &__list {
@@ -23,13 +28,18 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    &__item {
+      margin: 0;
+    }
     &__img {
       width: calc((768px - (2 * 30px)) / 2);
+      height: auto;
     }
   }
   @media screen and (min-width: 1200px) {
     &__img {
       width: calc((1200px - (4 * 30px)) / 4);
+      height: auto;
     }
   }
 }
@@ -44,7 +54,7 @@
   @media screen and (min-width: 768px) {
     width: calc((768px - (2 * 30px)) / 2);
     @media screen and (min-width: 1200px) {
-      width: calc((1200px - (4 * 30px)) / 4);
+      max-width: calc((1200px - (4 * 30px)) / 4);
       padding-top: 30px;
       padding-bottom: 30px;
     }
