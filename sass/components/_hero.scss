@@ -2,7 +2,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 1600px;
-  min-height: 400px;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--bg-color-hero-footer);
@@ -27,7 +27,7 @@
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    min-height: 600px;
+    height: auto;
     &__title {
       max-width: 696px;
       margin-left: auto;

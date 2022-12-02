@@ -1,13 +1,13 @@
 .client {
   &__box {
-    // max-width: 767px;
     text-align: center;
 
-    // @media screen and (min-width: 768px) {
-    //   width: 768px;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //   width: 1200px;
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   &__list {
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc((100% - (2 * 30px)) / 2);
+    width: calc((100vw - (2 * 30px)) / 2);
     height: 92px;
     background-color: transparent;
     border: 1px solid var(--bg-secondary-network);
@@ -31,11 +31,11 @@
       fill: var(--accent-color);
     }
     @media screen and (min-width: 768px) {
-      width: calc((100% - (3 * 30px)) / 3);
+      width: calc((768px - (3 * 30px)) / 3);
     }
 
     @media screen and (min-width: 1200px) {
-      width: calc((100% - (6 * 30px)) / 6);
+      width: calc((1200px - (6 * 30px)) / 6);
     }
   }
 

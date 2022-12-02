@@ -20,8 +20,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 450px;
-  height: 609px;
+  width: calc(100vw - 30px);
+  height: auto;
   padding: 40px;
   background-color: var(--white-text-bg);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,10 +32,14 @@
   .backdrop__is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
   }
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    height: auto;
+  }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    height: auto;
   }
 }
 .button--modal {
@@ -46,8 +50,8 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 30px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
   border-radius: 50%;
   background-color: var(--white-text-bg);
   border: 1px solid rgba(0, 0, 0, 0.1);

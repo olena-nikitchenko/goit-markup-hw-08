@@ -1,7 +1,6 @@
 .team {
   background-color: var(--bg-secondary-color);
   &__box {
-    width: 480px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -11,12 +10,12 @@
       width: 1200px;
     }
   }
-  // &__item {
-  //   margin-right: auto;
-  //   margin-left: auto;
-  // }
+  &__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
   &__img {
-    width: calc(480px - 30px);
+    width: calc(100vw - 30px);
     height: auto;
   }
   &__item:not(:last-child) {
@@ -29,22 +28,26 @@
       gap: 30px;
     }
     &__item {
+      width: 354px;
       margin: 0;
     }
     &__img {
-      width: calc((768px - (2 * 30px)) / 2);
+      width: 354px;
       height: auto;
     }
   }
   @media screen and (min-width: 1200px) {
+    &__item {
+      width: 270px;
+    }
     &__img {
-      width: calc((1200px - (4 * 30px)) / 4);
+      width: 270px;
       height: auto;
     }
   }
 }
 .card--team {
-  width: calc(480px - 30px);
+  max-width: calc(100vw - 30px);
   padding-top: 30px;
   padding-bottom: 24px;
   background: var(--white-text-bg);
@@ -52,9 +55,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   @media screen and (min-width: 768px) {
-    width: calc((768px - (2 * 30px)) / 2);
+    width: 354px;
     @media screen and (min-width: 1200px) {
-      max-width: calc((1200px - (4 * 30px)) / 4);
+      width: 270px;
       padding-top: 30px;
       padding-bottom: 30px;
     }
