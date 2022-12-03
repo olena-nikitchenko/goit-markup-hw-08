@@ -527,9 +527,8 @@ img {
   list-style: none;
   margin-bottom: auto;
 }
-
-.mobile-menu .current-page {
-  color: #2196f3;
+.mobile-menu__link.current-page {
+  color: var(--accent-color);
 }
 .mobile-menu .link {
   display: block;

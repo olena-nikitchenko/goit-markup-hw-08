@@ -70,13 +70,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
   margin-bottom: auto;
-}
 
-.mobile-menu {
-  & .current-page {
-    color: #2196f3;
+  &__link.current-page {
+    color: var(--accent-color);
   }
   & .link {
     display: block;
@@ -139,3 +136,6 @@
     color: rgba(33, 33, 33, 0.2);
   }
 }
+// .current-page {
+//   color: var(--accent-color);
+// }
