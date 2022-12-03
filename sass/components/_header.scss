@@ -74,6 +74,9 @@
     }
   }
 }
+.current-page {
+  color: var(--accent-color);
+}
 .current-page::after {
   @media screen and (min-width: 481px) {
     position: absolute;
