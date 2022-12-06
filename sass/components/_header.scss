@@ -95,9 +95,8 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 15px;
     display: block;
-    margin-left: auto;
     margin-bottom: 0;
 
     &__item:first-child {

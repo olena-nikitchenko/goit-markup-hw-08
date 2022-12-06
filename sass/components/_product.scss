@@ -1,12 +1,13 @@
 .product {
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    max-width: 767px;
   }
   &__item {
     margin: 0;
-    flex-basis: calc((100% - 30px * 2) / 3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: calc(100vw - (15px * 2));
   }
   &__link {
     display: block;
@@ -27,8 +28,7 @@
     overflow: hidden;
   }
   &__card {
-    display: block;
-    max-width: auto;
+    width: calc(100vw - (15px * 2));
     height: auto;
   }
   &__overlay {
@@ -73,5 +73,35 @@
     margin-bottom: 0;
     font-size: 16px;
     line-height: 1.9;
+  }
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    &__item {
+      margin: 0;
+      width: calc((100vw - 2 * 30px) / 2);
+    }
+    &__card {
+      width: calc((100vw - 2 * 30px) / 2);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &__list {
+      max-width: 1170px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__item {
+      margin: 0;
+      width: calc((100vw - 3 * 30px) / 3);
+    }
+    &__card {
+      width: calc((100vw - 3 * 30px) / 3);
+    }
   }
 }
