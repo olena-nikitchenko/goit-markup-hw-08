@@ -1355,6 +1355,9 @@ img {
   line-height: 1.9;
 }
 @media screen and (min-width: 768px) {
+  .product__item:first-child .product__element {
+    padding-bottom: 55px;
+  }
   .product__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1372,6 +1375,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .product__item:first-child .product__element {
+    padding-bottom: 19px;
+  }
   .product__list {
     max-width: 1170px;
     display: -webkit-box;

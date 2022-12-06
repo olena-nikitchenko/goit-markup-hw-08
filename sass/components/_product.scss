@@ -75,6 +75,9 @@
     line-height: 1.9;
   }
   @media screen and (min-width: 768px) {
+    &__item:first-child .product__element {
+      padding-bottom: 55px;
+    }
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -90,6 +93,9 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    &__item:first-child .product__element {
+      padding-bottom: 19px;
+    }
     &__list {
       max-width: 1170px;
       display: flex;
